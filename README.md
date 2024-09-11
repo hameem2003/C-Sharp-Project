@@ -67,7 +67,7 @@ The **Mobile Retail Shop** is a comprehensive application designed to manage a m
 
 ## Contributing
 - [**Mustafa Alam Hameem**](https://github.com/hameem2003)
-- [**Sadikuzzaman Rakib**](https://github.com/rakib)
+- [**Sadikuzzaman Rakib**](https://github.com/Sadikuzzamanrakib)
   
 Contributions are welcome! Please submit a pull request or open an issue to discuss changes.
 
