@@ -15,8 +15,8 @@ namespace Mobile_Retail_Shop
         {
             public static bool SendEmail(string recipientEmail, string emailSubject, string emailBody)
             {
-                const string senderEmail = "basharulalamm@gmail.com";
-                const string senderPassword = "xvoawtmtomxzuqio";
+                const string senderEmail = "im.mustafahameem@gmail.com";
+                const string senderPassword = " ";
 
                 string subject = emailSubject;
                 string body = emailBody;

@@ -20,8 +20,10 @@ namespace Mobile_Retail_Shop
         }
 
         public UserProfile(string userID) : this()
-        {
-            this.userID = userID;   
+        {this.userID = userID;   
+            profile_panel.Visible = true;
+            password_update_panel.Visible = false;
+            
             DataLoad();
         }
 

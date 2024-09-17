@@ -12,7 +12,7 @@ namespace Mobile_Retail_Shop
 {
     public partial class opening : Form
     {
-        private int elapsedTime = 0; // Time elapsed in seconds
+       // private int elapsedTime = 0; // Time elapsed in seconds
         private Timer progressBarTimer;
         private Timer delayTimer;
 
