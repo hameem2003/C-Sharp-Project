@@ -47,7 +47,7 @@ The **Mobile Retail Shop** is a comprehensive application designed to manage a m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/hameem2003/Mobile-Retail-Shop.git
+   git clone https://github.com/hameem2003/C-Sharp-Project.git
 2. Open the solution in Visual Studio.
 3. Restore NuGet packages.
 4. Set up the SQL Database:
@@ -67,10 +67,9 @@ The **Mobile Retail Shop** is a comprehensive application designed to manage a m
 
 ## Contributing
 - [**Mustafa Alam Hameem**](https://github.com/hameem2003)
-- [**Basharul Alam Mazu**](https://github.com/Basharul2002)
-- [**Tanjim Rahman**](https://github.com/tanjimmm)
+- [**Sadikuzzaman Rakib**](https://github.com/Sadikuzzamanrakib)
   
 Contributions are welcome! Please submit a pull request or open an issue to discuss changes.
 
 ## License
-This project is licensed under the [MIT License](https://github.com/hameem2003/Mobile-Retail-Shop?tab=MIT-1-ov-file).
+This project is licensed under the [MIT License](https://github.com/hameem2003/C-Sharp-Project?tab=MIT-1-ov-file).
