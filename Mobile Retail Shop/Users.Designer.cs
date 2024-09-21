@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.result_panel = new Guna.UI2.WinForms.Guna2DataGridView();
             this.user_profile_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.name_tb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,62 +45,11 @@
             this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.search_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.user_info_panel = new Guna.UI2.WinForms.Guna2Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.result_panel)).BeginInit();
+            this.result_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.user_profile_panel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.user_info_panel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // result_panel
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.result_panel.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.result_panel.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.result_panel.ColumnHeadersHeight = 4;
-            this.result_panel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.result_panel.DefaultCellStyle = dataGridViewCellStyle3;
-            this.result_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.result_panel.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.result_panel.Location = new System.Drawing.Point(0, 77);
-            this.result_panel.Name = "result_panel";
-            this.result_panel.RowHeadersVisible = false;
-            this.result_panel.Size = new System.Drawing.Size(408, 402);
-            this.result_panel.TabIndex = 1;
-            this.result_panel.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.result_panel.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.result_panel.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.result_panel.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.result_panel.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.result_panel.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.result_panel.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.result_panel.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.result_panel.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.result_panel.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result_panel.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.result_panel.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.result_panel.ThemeStyle.HeaderStyle.Height = 4;
-            this.result_panel.ThemeStyle.ReadOnly = false;
-            this.result_panel.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.result_panel.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.result_panel.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result_panel.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.result_panel.ThemeStyle.RowsStyle.Height = 22;
-            this.result_panel.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.result_panel.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // user_profile_panel
             // 
@@ -356,6 +301,15 @@
             this.user_info_panel.Size = new System.Drawing.Size(408, 479);
             this.user_info_panel.TabIndex = 4;
             // 
+            // result_panel
+            // 
+            this.result_panel.AutoScroll = true;
+            this.result_panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.result_panel.Location = new System.Drawing.Point(0, 77);
+            this.result_panel.Name = "result_panel";
+            this.result_panel.Size = new System.Drawing.Size(408, 402);
+            this.result_panel.TabIndex = 4;
+            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,7 +318,6 @@
             this.Controls.Add(this.user_profile_panel);
             this.Name = "Users";
             this.Size = new System.Drawing.Size(408, 479);
-            ((System.ComponentModel.ISupportInitialize)(this.result_panel)).EndInit();
             this.user_profile_panel.ResumeLayout(false);
             this.user_profile_panel.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
@@ -374,7 +327,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2DataGridView result_panel;
         private Guna.UI2.WinForms.Guna2Panel user_profile_panel;
         private Guna.UI2.WinForms.Guna2Button update_btn;
         private Guna.UI2.WinForms.Guna2Button back_btn;
@@ -392,5 +344,6 @@
         private Guna.UI2.WinForms.Guna2Button search_btn;
         private Guna.UI2.WinForms.Guna2TextBox search_tb;
         private Guna.UI2.WinForms.Guna2Panel user_info_panel;
+        private System.Windows.Forms.FlowLayoutPanel result_panel;
     }
 }

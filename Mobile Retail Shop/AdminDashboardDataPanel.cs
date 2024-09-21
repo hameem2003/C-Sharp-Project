@@ -92,7 +92,7 @@ namespace Mobile_Retail_Shop
 
 
             // Load total shop owner
-            total_shop_owner.Text = Convert.ToInt32(dataSet.Tables[2].Rows[0][0]) == 0 ? "Total Shop Owner: N/A" : $"Total Shop Owner: {dataSet.Tables[2].Rows[0][0]}";
+           // total_shop_owner.Text = Convert.ToInt32(dataSet.Tables[2].Rows[0][0]) == 0 ? "Total Shop Owner: N/A" : $"Total Shop Owner: {dataSet.Tables[2].Rows[0][0]}";
 
             // Load total product
             total_product.Text = Convert.ToInt32(dataSet.Tables[3].Rows[0][0]) == 0 ? "Total Product: N/A" : $"Total Product: {dataSet.Tables[3].Rows[0][0]}";

@@ -32,11 +32,11 @@
             this.data_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.left_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.log_out_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.dashboard_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.admin_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.admin_picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.dashboard_data_panel = new System.Windows.Forms.FlowLayoutPanel();
-            this.dashboard_btn = new Guna.UI2.WinForms.Guna2Button();
             this.left_panel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.admin_picture)).BeginInit();
@@ -89,6 +89,23 @@
             this.log_out_btn.Text = "Log Out";
             this.log_out_btn.Click += new System.EventHandler(this.log_out_btn_Click);
             // 
+            // dashboard_btn
+            // 
+            this.dashboard_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.dashboard_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.dashboard_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dashboard_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dashboard_btn.ForeColor = System.Drawing.Color.White;
+            this.dashboard_btn.Location = new System.Drawing.Point(0, 124);
+            this.dashboard_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.dashboard_btn.Name = "dashboard_btn";
+            this.dashboard_btn.Size = new System.Drawing.Size(178, 45);
+            this.dashboard_btn.TabIndex = 10;
+            this.dashboard_btn.Text = "DashBoard";
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.admin_name);
@@ -128,23 +145,6 @@
             this.dashboard_data_panel.Name = "dashboard_data_panel";
             this.dashboard_data_panel.Size = new System.Drawing.Size(622, 450);
             this.dashboard_data_panel.TabIndex = 0;
-            // 
-            // dashboard_btn
-            // 
-            this.dashboard_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.dashboard_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.dashboard_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.dashboard_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.dashboard_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dashboard_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dashboard_btn.ForeColor = System.Drawing.Color.White;
-            this.dashboard_btn.Location = new System.Drawing.Point(0, 124);
-            this.dashboard_btn.Margin = new System.Windows.Forms.Padding(0);
-            this.dashboard_btn.Name = "dashboard_btn";
-            this.dashboard_btn.Size = new System.Drawing.Size(178, 45);
-            this.dashboard_btn.TabIndex = 10;
-            this.dashboard_btn.Text = "DashBoard";
-            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
             // 
             // ShopOwner
             // 

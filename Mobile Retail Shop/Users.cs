@@ -48,10 +48,10 @@ namespace Mobile_Retail_Shop
 
             if (dataSet.Tables[0].Rows.Count == 0)
                 return;
-
+            User user;
             foreach (DataRow row in dataSet.Tables[0].Rows)
             {
-                User user = new User(userId: row["ID"].ToString(), userName: row["Name"].ToString(), userEmail: row["Email"].ToString(), userPhoneNumber: row["Phone Number"].ToString(), city: row["City"].ToString(), password: row["Password"].ToString(), userType: userType, users: this) ;
+                 user = new User(userId: row["ID"].ToString(), userName: row["Name"].ToString(), userEmail: row["Email"].ToString(), userPhoneNumber: row["Phone Number"].ToString(), city: row["City"].ToString(), password: row["Password"].ToString(), userType: userType, users: this) ;
                 result_panel.Controls.Add(user);
             }
         }

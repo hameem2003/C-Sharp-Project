@@ -77,7 +77,11 @@ namespace Mobile_Retail_Shop
                 MessageBox.Show($"Class ShopOwnerInfoDashBoard Function DataLoad \nError: {error}", "Shop information");
                 return;
             }
-
+            if (dataSet.Tables[0].Rows.Count==0)
+            {
+                total_shop.Text = "Total Shop: N/A";
+                return;
+            }
             total_shop.Text = $"Total Shop: {dataSet.Tables[0].Rows[0]["Total Shop"]}";
 
 

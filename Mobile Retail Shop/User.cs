@@ -20,7 +20,8 @@ namespace Mobile_Retail_Shop
 
         public User(string userId, string userName, string userEmail, string userPhoneNumber, string city, string password, int userType, Users users) : this()
         {
-            this.Tag = new UserInfo { Id = userId, Name = userName, Email = userEmail, PhoneNumber = userPhoneNumber, City = city,  Password = password, UserType = userType };
+            this.Tag = new UserInfo { Id = userId, Name = userName, Email = userEmail, PhoneNumber = userPhoneNumber, City = city, Password = password, UserType = userType };
+           // if (userType==1)
             name.Text = userName;
             email.Text = userEmail; 
             phone_number.Text = userPhoneNumber;
