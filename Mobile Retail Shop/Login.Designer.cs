@@ -37,13 +37,13 @@
             this.forgot_password = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.password_toggle_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -185,15 +185,22 @@
             this.label1.Text = "---------------------------------------------------------------------------------" +
     "-----------------";
             // 
-            // label3
+            // password_toggle_btn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(206, 432);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "©2024 Hameem All rights reserved";
+            this.password_toggle_btn.Animated = true;
+            this.password_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.password_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.password_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.password_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.password_toggle_btn.FillColor = System.Drawing.Color.Transparent;
+            this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
+            this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
+            this.password_toggle_btn.Location = new System.Drawing.Point(279, 140);
+            this.password_toggle_btn.Name = "password_toggle_btn";
+            this.password_toggle_btn.Size = new System.Drawing.Size(43, 41);
+            this.password_toggle_btn.TabIndex = 17;
+            this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
             // 
             // label4
             // 
@@ -236,23 +243,6 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Best After sell service";
             // 
-            // password_toggle_btn
-            // 
-            this.password_toggle_btn.Animated = true;
-            this.password_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.password_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.password_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.password_toggle_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.password_toggle_btn.FillColor = System.Drawing.Color.Transparent;
-            this.password_toggle_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.password_toggle_btn.ForeColor = System.Drawing.Color.White;
-            this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
-            this.password_toggle_btn.Location = new System.Drawing.Point(279, 140);
-            this.password_toggle_btn.Name = "password_toggle_btn";
-            this.password_toggle_btn.Size = new System.Drawing.Size(43, 41);
-            this.password_toggle_btn.TabIndex = 17;
-            this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
@@ -264,17 +254,27 @@
             this.guna2PictureBox1.TabIndex = 24;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(138, 428);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(320, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "©2024 Mobile Retail Shop Management System All rights reserved";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(664, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -302,12 +302,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel forgot_password;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

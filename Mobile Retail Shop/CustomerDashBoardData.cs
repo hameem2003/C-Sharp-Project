@@ -125,15 +125,20 @@ namespace Mobile_Retail_Shop
 
         private void customer_profile_btn_Click(object sender, EventArgs e)
         {
-            UserProfile userProfile = new UserProfile(userID: this.customerID);
-            userProfile.ShowDialog();
+            
+                UserProfile userProfile = new UserProfile(userID: this.customerID);
+                userProfile.ShowDialog();
+            
         }
 
         private void log_out_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
+            CustomerDashboard customerDashboard = new CustomerDashboard();
+            customerDashboard.Close();
             Login login = new Login();
             login.Show();
+            
         }
 
 

@@ -28,19 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.data_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.SuspendLayout();
             // 
             // data_panel
             // 
-            this.data_panel.CustomizableEdges = customizableEdges1;
             this.data_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.data_panel.Location = new System.Drawing.Point(0, 0);
             this.data_panel.Name = "data_panel";
-            this.data_panel.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            this.data_panel.Size = new System.Drawing.Size(685, 454);
+            this.data_panel.Size = new System.Drawing.Size(787, 533);
             this.data_panel.TabIndex = 0;
             this.data_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.data_panel_Paint);
             // 
@@ -49,9 +45,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(685, 454);
+            this.ClientSize = new System.Drawing.Size(787, 533);
+            this.ControlBox = false;
             this.Controls.Add(this.data_panel);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CustomerDashboard";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Load);

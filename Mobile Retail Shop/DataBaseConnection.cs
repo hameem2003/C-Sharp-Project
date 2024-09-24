@@ -9,6 +9,6 @@ namespace Mobile_Retail_Shop
     internal class DataBaseConnection
     {
         // Hameem
-       public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\project 101\\Mobile-Retail-Shop\\DataBase\\Mobile Retail Shop.mdf\";Integrated Security=True;Connect Timeout=30";
+       public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\project 101\\C-Sharp-Project\\DataBase\\Mobile Retail Shop.mdf\";Integrated Security=True;Connect Timeout=30";
     }
 }
