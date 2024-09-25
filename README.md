@@ -60,7 +60,70 @@ The **Mobile Retail Shop** is a comprehensive application designed to manage a m
 - **Admin:** Log in with Admin credentials to manage users, shops, and products.
 - **Shop Owner:** Log in with Shop Owner credentials to manage your assigned shops.
 - **Customer:** Create a customer account, browse products, add items to your cart, and proceed to checkout.
+## SQL Schema
 
+-- Product Information Table
+CREATE TABLE [dbo].[Product Information] (
+    [ID]             INT             IDENTITY (1, 1) NOT NULL,
+    [Picture]        IMAGE           NULL,
+    [Company Name]   VARCHAR (100)   NOT NULL,
+    [Model]          VARCHAR (100)   NOT NULL,
+    [SIM]            INT             NOT NULL,
+    [RAM]            VARCHAR (6)     NOT NULL,
+    [ROM]            VARCHAR (6)     NOT NULL,
+    [Color]          VARCHAR (100)   NOT NULL,
+    [Price]          INT             NOT NULL,
+    [Discount]       INT             NOT NULL,
+    [Total Review]   DECIMAL (18, 5) NULL,
+    [Total Reviewer] INT             NULL,
+    [Shop ID]        INT             NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC),
+    FOREIGN KEY ([Shop ID]) REFERENCES [dbo].[Shop Information] ([ID])
+);
+
+-- Shop Accounts Table
+CREATE TABLE [dbo].[Shop Accounts] (
+    [Shop ID]         INT             NOT NULL,
+    [Current Balance] DECIMAL (15, 2) DEFAULT ((0)) NOT NULL,
+    [Total Withdraw]  DECIMAL (15, 2) DEFAULT ((0)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Shop ID] ASC),
+    FOREIGN KEY ([Shop ID]) REFERENCES [dbo].[Shop Information] ([ID])
+);
+
+-- Transaction Table
+CREATE TABLE [dbo].[Transaction] (
+    [ID]               INT      IDENTITY (1, 1) NOT NULL,
+    [User ID]          INT      NOT NULL,
+    [Transaction Date] DATETIME DEFAULT (getdate()) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC),
+    FOREIGN KEY ([User ID]) REFERENCES [dbo].[User Information] ([ID])
+);
+
+-- Transaction Details Table
+CREATE TABLE [dbo].[Transaction Details] (
+    [ID]             INT             IDENTITY (1, 1) NOT NULL,
+    [Transaction ID] INT             NOT NULL,
+    [Shop ID]        INT             NOT NULL,
+    [Product ID]     INT             NOT NULL,
+    [Quantity]       INT             NOT NULL,
+    [Total Price]    DECIMAL (18, 2) NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC),
+    FOREIGN KEY ([Transaction ID]) REFERENCES [dbo].[Transaction] ([ID]),
+    FOREIGN KEY ([Shop ID]) REFERENCES [dbo].[Shop Information] ([ID]),
+    FOREIGN KEY ([Product ID]) REFERENCES [dbo].[Product Information] ([ID])
+);
+
+-- User Information Table
+CREATE TABLE [dbo].[User Information] (
+    [ID]           INT           IDENTITY (1, 1) NOT NULL,
+    [Name]         VARCHAR (100) NOT NULL,
+    [Email]        VARCHAR (100) NOT NULL,
+    [Phone Number] VARCHAR (15)  NOT NULL,
+    [City]         VARCHAR (50)  NOT NULL,
+    [Password]     VARCHAR (100) NOT NULL,
+    [User Type]    INT           NOT NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
 
 ## Screenshots
 
