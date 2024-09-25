@@ -60,6 +60,9 @@ The **Mobile Retail Shop** is a comprehensive application designed to manage a m
 - **Admin:** Log in with Admin credentials to manage users, shops, and products.
 - **Shop Owner:** Log in with Shop Owner credentials to manage your assigned shops.
 - **Customer:** Create a customer account, browse products, add items to your cart, and proceed to checkout.
+
+
+![App Screenshot](https://github.com/hameem2003/C-Sharp-Project/blob/main/Untitled%20(1).png?raw=true)
 ## SQL Schema
 
 -- Product Information Table
@@ -133,9 +136,26 @@ CREATE TABLE [dbo].[User Information] (
 ```
 
 ## Roadmap      Database connectionString process
+- After open (Mobile Retail Shop.sln) in your Visual Studio
+1................
 
+![App Screenshot](https://github.com/hameem2003/C-Sharp-Project/blob/main/1.png?raw=true)
 
+2................
 
+![App Screenshot](https://github.com/hameem2003/C-Sharp-Project/blob/main/2.png?raw=true)
+
+3.................
+
+![App Screenshot](https://github.com/hameem2003/C-Sharp-Project/blob/main/3.png?raw=true)
+
+-Copy this connectionString 
+4....................
+
+![App Screenshot](https://github.com/hameem2003/C-Sharp-Project/blob/main/4.png?raw=true)
+
+5...........
+-Paste in (Databaseconnection.cs) "paste here"
 
 ## Contributing
 - [**Mustafa Alam Hameem**](https://github.com/hameem2003)
