@@ -106,8 +106,11 @@ namespace Mobile_Retail_Shop
 
         }
 
+        private void product_price_Click(object sender, EventArgs e)
+        {
 
-         
+        }
+
         private void product_details_btn_Click(object sender, EventArgs e)
         {
 

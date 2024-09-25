@@ -53,6 +53,7 @@
             this.product_price.Size = new System.Drawing.Size(27, 15);
             this.product_price.TabIndex = 1;
             this.product_price.Text = "Price";
+            this.product_price.Click += new System.EventHandler(this.product_price_Click);
             // 
             // product_buy_btn
             // 

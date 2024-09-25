@@ -29,38 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.user_search_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.search_box_tb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -123,11 +91,9 @@
             // user_search_panel
             // 
             this.user_search_panel.Controls.Add(this.panel4);
-            this.user_search_panel.CustomizableEdges = customizableEdges3;
             this.user_search_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.user_search_panel.Location = new System.Drawing.Point(0, 0);
             this.user_search_panel.Name = "user_search_panel";
-            this.user_search_panel.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.user_search_panel.Size = new System.Drawing.Size(649, 331);
             this.user_search_panel.TabIndex = 2;
             // 
@@ -150,7 +116,6 @@
             // 
             this.search_box_tb.BackColor = System.Drawing.Color.Transparent;
             this.search_box_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.search_box_tb.CustomizableEdges = customizableEdges1;
             this.search_box_tb.DefaultText = "";
             this.search_box_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.search_box_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -168,7 +133,6 @@
             this.search_box_tb.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.search_box_tb.PlaceholderText = "Email address or Phone Number";
             this.search_box_tb.SelectedText = "";
-            this.search_box_tb.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.search_box_tb.Size = new System.Drawing.Size(408, 36);
             this.search_box_tb.TabIndex = 5;
             // 
@@ -250,11 +214,9 @@
             this.main_panel.Controls.Add(this.otp_sending_panel);
             this.main_panel.Controls.Add(this.user_profile_showing_panel);
             this.main_panel.Controls.Add(this.user_search_panel);
-            this.main_panel.CustomizableEdges = customizableEdges31;
             this.main_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.main_panel.Location = new System.Drawing.Point(0, 0);
             this.main_panel.Name = "main_panel";
-            this.main_panel.ShadowDecoration.CustomizableEdges = customizableEdges32;
             this.main_panel.Size = new System.Drawing.Size(666, 344);
             this.main_panel.TabIndex = 4;
             // 
@@ -273,18 +235,15 @@
             this.reset_password_panel.Controls.Add(this.name_reset_password);
             this.reset_password_panel.Controls.Add(this.pictureBox1);
             this.reset_password_panel.Controls.Add(this.label10);
-            this.reset_password_panel.CustomizableEdges = customizableEdges17;
             this.reset_password_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.reset_password_panel.Location = new System.Drawing.Point(0, 1495);
             this.reset_password_panel.Name = "reset_password_panel";
-            this.reset_password_panel.ShadowDecoration.CustomizableEdges = customizableEdges18;
             this.reset_password_panel.Size = new System.Drawing.Size(649, 515);
             this.reset_password_panel.TabIndex = 6;
             this.reset_password_panel.Visible = false;
             // 
             // reset_password_back_btn
             // 
-            this.reset_password_back_btn.CustomizableEdges = customizableEdges5;
             this.reset_password_back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.reset_password_back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.reset_password_back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -293,7 +252,6 @@
             this.reset_password_back_btn.ForeColor = System.Drawing.Color.White;
             this.reset_password_back_btn.Location = new System.Drawing.Point(132, 388);
             this.reset_password_back_btn.Name = "reset_password_back_btn";
-            this.reset_password_back_btn.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.reset_password_back_btn.Size = new System.Drawing.Size(116, 45);
             this.reset_password_back_btn.TabIndex = 21;
             this.reset_password_back_btn.Text = "Back";
@@ -301,7 +259,6 @@
             // 
             // reset_password_btn
             // 
-            this.reset_password_btn.CustomizableEdges = customizableEdges7;
             this.reset_password_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.reset_password_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.reset_password_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -310,7 +267,6 @@
             this.reset_password_btn.ForeColor = System.Drawing.Color.White;
             this.reset_password_btn.Location = new System.Drawing.Point(317, 387);
             this.reset_password_btn.Name = "reset_password_btn";
-            this.reset_password_btn.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.reset_password_btn.Size = new System.Drawing.Size(116, 45);
             this.reset_password_btn.TabIndex = 21;
             this.reset_password_btn.Text = "Reset Password";
@@ -319,7 +275,6 @@
             // confirm_toggle_btn
             // 
             this.confirm_toggle_btn.Animated = true;
-            this.confirm_toggle_btn.CustomizableEdges = customizableEdges9;
             this.confirm_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.confirm_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.confirm_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -330,7 +285,6 @@
             this.confirm_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
             this.confirm_toggle_btn.Location = new System.Drawing.Point(488, 324);
             this.confirm_toggle_btn.Name = "confirm_toggle_btn";
-            this.confirm_toggle_btn.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.confirm_toggle_btn.Size = new System.Drawing.Size(43, 31);
             this.confirm_toggle_btn.TabIndex = 19;
             this.confirm_toggle_btn.Click += new System.EventHandler(this.confirm_toggle_btn_Click);
@@ -338,7 +292,6 @@
             // password_toggle_btn
             // 
             this.password_toggle_btn.Animated = true;
-            this.password_toggle_btn.CustomizableEdges = customizableEdges11;
             this.password_toggle_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.password_toggle_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.password_toggle_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -349,7 +302,6 @@
             this.password_toggle_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.show;
             this.password_toggle_btn.Location = new System.Drawing.Point(483, 252);
             this.password_toggle_btn.Name = "password_toggle_btn";
-            this.password_toggle_btn.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.password_toggle_btn.Size = new System.Drawing.Size(43, 31);
             this.password_toggle_btn.TabIndex = 20;
             this.password_toggle_btn.Click += new System.EventHandler(this.password_toggle_btn_Click);
@@ -358,7 +310,6 @@
             // 
             this.confirm_password_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.confirm_password_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.confirm_password_tb.CustomizableEdges = customizableEdges13;
             this.confirm_password_tb.DefaultText = "";
             this.confirm_password_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.confirm_password_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -374,7 +325,6 @@
             this.confirm_password_tb.PasswordChar = '●';
             this.confirm_password_tb.PlaceholderText = "";
             this.confirm_password_tb.SelectedText = "";
-            this.confirm_password_tb.ShadowDecoration.CustomizableEdges = customizableEdges14;
             this.confirm_password_tb.Size = new System.Drawing.Size(435, 36);
             this.confirm_password_tb.TabIndex = 17;
             // 
@@ -382,7 +332,6 @@
             // 
             this.password_tb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.password_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.password_tb.CustomizableEdges = customizableEdges15;
             this.password_tb.DefaultText = "";
             this.password_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.password_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -398,7 +347,6 @@
             this.password_tb.PasswordChar = '●';
             this.password_tb.PlaceholderText = "";
             this.password_tb.SelectedText = "";
-            this.password_tb.ShadowDecoration.CustomizableEdges = customizableEdges16;
             this.password_tb.Size = new System.Drawing.Size(433, 36);
             this.password_tb.TabIndex = 18;
             // 
@@ -492,11 +440,9 @@
             this.otp_verify_panel.Controls.Add(this.label3);
             this.otp_verify_panel.Controls.Add(this.titlel2);
             this.otp_verify_panel.Controls.Add(this.label4);
-            this.otp_verify_panel.CustomizableEdges = customizableEdges21;
             this.otp_verify_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.otp_verify_panel.Location = new System.Drawing.Point(0, 1154);
             this.otp_verify_panel.Name = "otp_verify_panel";
-            this.otp_verify_panel.ShadowDecoration.CustomizableEdges = customizableEdges22;
             this.otp_verify_panel.Size = new System.Drawing.Size(649, 341);
             this.otp_verify_panel.TabIndex = 5;
             this.otp_verify_panel.Visible = false;
@@ -504,7 +450,6 @@
             // otp_code_tb
             // 
             this.otp_code_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.otp_code_tb.CustomizableEdges = customizableEdges19;
             this.otp_code_tb.DefaultText = "";
             this.otp_code_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.otp_code_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -519,7 +464,6 @@
             this.otp_code_tb.PasswordChar = '\0';
             this.otp_code_tb.PlaceholderText = "";
             this.otp_code_tb.SelectedText = "";
-            this.otp_code_tb.ShadowDecoration.CustomizableEdges = customizableEdges20;
             this.otp_code_tb.Size = new System.Drawing.Size(489, 36);
             this.otp_code_tb.TabIndex = 14;
             // 
@@ -611,7 +555,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 29F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(149, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(366, 44);
+            this.label4.Size = new System.Drawing.Size(365, 44);
             this.label4.TabIndex = 8;
             this.label4.Text = "We sent you a code";
             // 
@@ -626,11 +570,9 @@
             this.otp_sending_panel.Controls.Add(this.customer_icon_picture_box);
             this.otp_sending_panel.Controls.Add(this.user_type);
             this.otp_sending_panel.Controls.Add(this.label1);
-            this.otp_sending_panel.CustomizableEdges = customizableEdges23;
             this.otp_sending_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.otp_sending_panel.Location = new System.Drawing.Point(0, 770);
             this.otp_sending_panel.Name = "otp_sending_panel";
-            this.otp_sending_panel.ShadowDecoration.CustomizableEdges = customizableEdges24;
             this.otp_sending_panel.Size = new System.Drawing.Size(649, 384);
             this.otp_sending_panel.TabIndex = 4;
             this.otp_sending_panel.Visible = false;
@@ -743,7 +685,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(60, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(537, 32);
+            this.label1.Size = new System.Drawing.Size(536, 32);
             this.label1.TabIndex = 7;
             this.label1.Text = "How do you want to reset your password?";
             // 
@@ -751,11 +693,9 @@
             // 
             this.user_profile_showing_panel.Controls.Add(this.user_show_panel);
             this.user_profile_showing_panel.Controls.Add(this.guna2Panel4);
-            this.user_profile_showing_panel.CustomizableEdges = customizableEdges29;
             this.user_profile_showing_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.user_profile_showing_panel.Location = new System.Drawing.Point(0, 331);
             this.user_profile_showing_panel.Name = "user_profile_showing_panel";
-            this.user_profile_showing_panel.ShadowDecoration.CustomizableEdges = customizableEdges30;
             this.user_profile_showing_panel.Size = new System.Drawing.Size(649, 439);
             this.user_profile_showing_panel.TabIndex = 0;
             this.user_profile_showing_panel.Visible = false;
@@ -771,17 +711,14 @@
             // guna2Panel4
             // 
             this.guna2Panel4.Controls.Add(this.profile_showing_back_btn);
-            this.guna2Panel4.CustomizableEdges = customizableEdges27;
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel4.Location = new System.Drawing.Point(0, 368);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.CustomizableEdges = customizableEdges28;
             this.guna2Panel4.Size = new System.Drawing.Size(649, 71);
             this.guna2Panel4.TabIndex = 5;
             // 
             // profile_showing_back_btn
             // 
-            this.profile_showing_back_btn.CustomizableEdges = customizableEdges25;
             this.profile_showing_back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.profile_showing_back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.profile_showing_back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -790,7 +727,6 @@
             this.profile_showing_back_btn.ForeColor = System.Drawing.Color.White;
             this.profile_showing_back_btn.Location = new System.Drawing.Point(197, 6);
             this.profile_showing_back_btn.Name = "profile_showing_back_btn";
-            this.profile_showing_back_btn.ShadowDecoration.CustomizableEdges = customizableEdges26;
             this.profile_showing_back_btn.Size = new System.Drawing.Size(180, 45);
             this.profile_showing_back_btn.TabIndex = 0;
             this.profile_showing_back_btn.Text = "Back";

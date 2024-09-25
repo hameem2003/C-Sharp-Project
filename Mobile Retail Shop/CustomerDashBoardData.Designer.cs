@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerDashBoardData));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.customer_profile_btn = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.log_out_btn = new Guna.UI2.WinForms.Guna2Button();
             this.cart_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.search_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.result_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.dashboard_panel = new Guna.UI2.WinForms.Guna2Panel();
@@ -52,13 +54,11 @@
             this.compnay_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.model = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_picture = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.customer_profile_btn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.dashboard_panel.SuspendLayout();
             this.product_information_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -75,6 +75,53 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(803, 83);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // customer_profile_btn
+            // 
+            this.customer_profile_btn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.customer_profile_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.customer_profile_btn.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.customer_profile_btn.Image = ((System.Drawing.Image)(resources.GetObject("customer_profile_btn.Image")));
+            this.customer_profile_btn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.customer_profile_btn.ImageRotate = 0F;
+            this.customer_profile_btn.ImageSize = new System.Drawing.Size(130, 110);
+            this.customer_profile_btn.Location = new System.Drawing.Point(549, 15);
+            this.customer_profile_btn.Name = "customer_profile_btn";
+            this.customer_profile_btn.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.customer_profile_btn.Size = new System.Drawing.Size(140, 62);
+            this.customer_profile_btn.TabIndex = 5;
+            this.customer_profile_btn.Click += new System.EventHandler(this.customer_profile_btn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // search_btn
+            // 
+            this.search_btn.AutoRoundedCorners = true;
+            this.search_btn.BackColor = System.Drawing.Color.White;
+            this.search_btn.BorderRadius = 19;
+            this.search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.search_btn.FillColor = System.Drawing.Color.Transparent;
+            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.search1;
+            this.search_btn.Location = new System.Drawing.Point(410, 25);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(45, 40);
+            this.search_btn.TabIndex = 1;
+            this.search_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // log_out_btn
             // 
@@ -113,27 +160,6 @@
             this.cart_btn.Text = "Cart";
             this.cart_btn.Click += new System.EventHandler(this.cart_btn_Click);
             // 
-            // search_btn
-            // 
-            this.search_btn.AutoRoundedCorners = true;
-            this.search_btn.BackColor = System.Drawing.Color.White;
-            this.search_btn.BorderRadius = 50;
-            this.search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.search_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.search_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.search_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.search_btn.FillColor = System.Drawing.Color.Transparent;
-            this.search_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.search_btn.ForeColor = System.Drawing.Color.White;
-            this.search_btn.Image = global::Mobile_Retail_Shop.Properties.Resources.search1;
-            this.search_btn.Location = new System.Drawing.Point(410, 25);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(45, 40);
-            this.search_btn.TabIndex = 1;
-            this.search_btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
-            // 
             // search_tb
             // 
             this.search_tb.BackColor = System.Drawing.Color.Transparent;
@@ -158,6 +184,7 @@
             this.search_tb.SelectedText = "";
             this.search_tb.Size = new System.Drawing.Size(366, 53);
             this.search_tb.TabIndex = 0;
+            this.search_tb.TextChanged += new System.EventHandler(this.search_tb_TextChanged);
             // 
             // result_panel
             // 
@@ -354,32 +381,6 @@
             this.product_picture.TabIndex = 39;
             this.product_picture.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // customer_profile_btn
-            // 
-            this.customer_profile_btn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.customer_profile_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.customer_profile_btn.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.customer_profile_btn.Image = ((System.Drawing.Image)(resources.GetObject("customer_profile_btn.Image")));
-            this.customer_profile_btn.ImageOffset = new System.Drawing.Point(0, 0);
-            this.customer_profile_btn.ImageRotate = 0F;
-            this.customer_profile_btn.ImageSize = new System.Drawing.Size(130, 110);
-            this.customer_profile_btn.Location = new System.Drawing.Point(549, 15);
-            this.customer_profile_btn.Name = "customer_profile_btn";
-            this.customer_profile_btn.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.customer_profile_btn.Size = new System.Drawing.Size(140, 62);
-            this.customer_profile_btn.TabIndex = 5;
-            this.customer_profile_btn.Click += new System.EventHandler(this.customer_profile_btn_Click);
-            // 
             // CustomerDashBoardData
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -388,12 +389,12 @@
             this.Name = "CustomerDashBoardData";
             this.Size = new System.Drawing.Size(803, 577);
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.dashboard_panel.ResumeLayout(false);
             this.dashboard_panel.PerformLayout();
             this.product_information_panel.ResumeLayout(false);
             this.product_information_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

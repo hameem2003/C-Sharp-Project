@@ -131,6 +131,11 @@ namespace Mobile_Retail_Shop
             
         }
 
+        private void search_tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void log_out_btn_Click(object sender, EventArgs e)
         {
             this.Hide();
