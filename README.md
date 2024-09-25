@@ -63,6 +63,7 @@ The **Mobile Retail Shop** is a comprehensive application designed to manage a m
 ## SQL Schema
 
 -- Product Information Table
+```sql
 CREATE TABLE [dbo].[Product Information] (
     [ID]             INT             IDENTITY (1, 1) NOT NULL,
     [Picture]        IMAGE           NULL,
@@ -80,8 +81,10 @@ CREATE TABLE [dbo].[Product Information] (
     PRIMARY KEY CLUSTERED ([ID] ASC),
     FOREIGN KEY ([Shop ID]) REFERENCES [dbo].[Shop Information] ([ID])
 );
+```
 
 -- Shop Accounts Table
+```sql
 CREATE TABLE [dbo].[Shop Accounts] (
     [Shop ID]         INT             NOT NULL,
     [Current Balance] DECIMAL (15, 2) DEFAULT ((0)) NOT NULL,
@@ -89,8 +92,9 @@ CREATE TABLE [dbo].[Shop Accounts] (
     PRIMARY KEY CLUSTERED ([Shop ID] ASC),
     FOREIGN KEY ([Shop ID]) REFERENCES [dbo].[Shop Information] ([ID])
 );
-
+```
 -- Transaction Table
+```sql
 CREATE TABLE [dbo].[Transaction] (
     [ID]               INT      IDENTITY (1, 1) NOT NULL,
     [User ID]          INT      NOT NULL,
@@ -98,8 +102,9 @@ CREATE TABLE [dbo].[Transaction] (
     PRIMARY KEY CLUSTERED ([ID] ASC),
     FOREIGN KEY ([User ID]) REFERENCES [dbo].[User Information] ([ID])
 );
-
+```
 -- Transaction Details Table
+```sql
 CREATE TABLE [dbo].[Transaction Details] (
     [ID]             INT             IDENTITY (1, 1) NOT NULL,
     [Transaction ID] INT             NOT NULL,
@@ -112,8 +117,9 @@ CREATE TABLE [dbo].[Transaction Details] (
     FOREIGN KEY ([Shop ID]) REFERENCES [dbo].[Shop Information] ([ID]),
     FOREIGN KEY ([Product ID]) REFERENCES [dbo].[Product Information] ([ID])
 );
-
+```
 -- User Information Table
+```sql
 CREATE TABLE [dbo].[User Information] (
     [ID]           INT           IDENTITY (1, 1) NOT NULL,
     [Name]         VARCHAR (100) NOT NULL,
@@ -124,8 +130,11 @@ CREATE TABLE [dbo].[User Information] (
     [User Type]    INT           NOT NULL,
     PRIMARY KEY CLUSTERED ([ID] ASC)
 );
+```
 
-## Screenshots
+## Roadmap      Database connectionString process
+
+
 
 
 ## Contributing
