@@ -20,6 +20,13 @@ namespace Mobile_Retail_Shop
         private int totalReviewer;
         private double totalReview;
         private Dictionary<string, CartItem> cart;
+        private string currentName;
+        private string currentModel;
+        private string currentColor;
+        private int currentPrice;
+        private int currentDiscount;
+        private int currentQuantity;
+
 
         public NewProduct()
         {
@@ -32,6 +39,7 @@ namespace Mobile_Retail_Shop
             this.admin = admin;
             this.newProduct = newProduct;
             delete_btn.Tag = this.productID = productID;
+            update_btn.Tag = this.productID= productID;
             this.cart = cart;
 
             Design();
@@ -127,7 +135,7 @@ namespace Mobile_Retail_Shop
                 MessageBox.Show($"Class: Product Function: DataLoad \nError: {error}");
                 return;
             }
-
+            
             // Display product details
             compnay_name.Text = dataSet.Tables[0].Rows[0]["Company Name"].ToString();
             model.Text = dataSet.Tables[0].Rows[0]["Model"].ToString();
@@ -136,7 +144,7 @@ namespace Mobile_Retail_Shop
             rom.Text = $"ROM: {dataSet.Tables[0].Rows[0]["ROM"]}";
             color.Text = $"COLOR: {dataSet.Tables[0].Rows[0]["Color"]}";
             price.Text = $"Price(BDT): {dataSet.Tables[0].Rows[0]["Price"]}";
-            discount.Text = $"Discount % : {dataSet.Tables[0].Rows[0]["Discount"]}";
+            discount.Text = $"Discount  : {dataSet.Tables[0].Rows[0]["Discount"]}";
 
             // Display total quantity, sold, and unsold
             int totalQuantity = Convert.ToInt32(dataSet.Tables[0].Rows[0]["Quantity"]);
@@ -162,8 +170,24 @@ namespace Mobile_Retail_Shop
             {
                 rating.Text = "Rating: N/A Total Review: 0"; // Handle case where there are no reviewers
             }
-        }
 
+            //*************************************
+            update_name.Text = dataSet.Tables[0].Rows[0]["Company Name"].ToString();
+            update_modelname.Text = dataSet.Tables[0].Rows[0]["Model"].ToString();
+            update_colour.Text = dataSet.Tables[0].Rows[0]["Color"].ToString();
+            update_price.Text = dataSet.Tables[0].Rows[0]["Price"].ToString();
+            update_discount.Text = dataSet.Tables[0].Rows[0]["Discount"].ToString();
+            update_quantity.Text = dataSet.Tables[0].Rows[0]["Quantity"].ToString();
+            // Optionally store the initial values for comparison
+            currentName = update_name.Text;
+            currentModel = update_modelname.Text;
+            currentColor = update_colour.Text;
+            currentPrice = Convert.ToInt32(update_price.Text);
+            currentDiscount = Convert.ToInt32(update_discount.Text);
+            currentQuantity = Convert.ToInt32(update_quantity.Text);
+
+        }
+        
 
 
         private void choose_picture_btn_Click(object sender, EventArgs e)
@@ -447,7 +471,101 @@ namespace Mobile_Retail_Shop
 
         }
 
-        
+        private void update_Click(object sender, EventArgs e)
+        {
+            string query = "UPDATE [Product Information] SET ";
+            string error;
+            bool hasUpdates = false;
+
+            // Check and update the Name
+            if (currentName != update_name.Text)
+            {
+                query += $"[Company Name] = '{update_name.Text}', ";
+                currentName = update_name.Text;  // Update the stored value
+                hasUpdates = true;
+            }
+
+            // Check and update the Model
+            if (currentModel != update_modelname.Text)
+            {
+                query += $"[Model] = '{update_modelname.Text}', ";
+                currentModel = update_modelname.Text;
+                hasUpdates = true;
+            }
+
+            // Check and update the Color
+            if (currentColor != update_colour.Text)
+            {
+                query += $"[Color] = '{update_colour.Text}', ";
+                currentColor = update_colour.Text;
+                hasUpdates = true;
+            }
+
+            // Validate and update the Price
+            if (int.TryParse(update_price.Text, out int newPrice) && newPrice >= 0 && currentPrice != newPrice)
+            {
+                query += $"[Price] = {newPrice}, ";
+                currentPrice = newPrice;
+                hasUpdates = true;
+            }
+            else if (newPrice < 0)
+            {
+                MessageBox.Show("Price must be a non-negative integer.");
+                return;
+            }
+
+            // Validate and update the Discount
+            if (int.TryParse(update_discount.Text, out int newDiscount) && newDiscount >= 0 && currentDiscount != newDiscount)
+            {
+                query += $"[Discount] = {newDiscount}, ";
+                currentDiscount = newDiscount;
+                hasUpdates = true;
+            }
+            else if (newDiscount < 0)
+            {
+                MessageBox.Show("Discount must be a non-negative integer.");
+                return;
+            }
+
+            // Validate and update the Quantity
+            if (int.TryParse(update_quantity.Text, out int newQuantity) && newQuantity >= 0 && currentQuantity != newQuantity)
+            {
+                query += $"[Quantity] = {newQuantity}, ";
+                currentQuantity = newQuantity;
+                hasUpdates = true;
+            }
+            else if (newQuantity < 0)
+            {
+                MessageBox.Show("Quantity must be a non-negative integer.");
+                return;
+            }
+
+            // If there are updates, execute the query
+            if (hasUpdates)
+            {
+                // Trim the last comma and add WHERE clause
+                query = $"{query.Substring(0, query.Length - 2)} WHERE ID = '{this.productID}'";
+
+                DataBase dataBase = new DataBase();
+                dataBase.ExecuteNonQuery(query, out error);
+
+                if (!string.IsNullOrEmpty(error))
+                {
+                    MessageBox.Show($"Class: Product Function: update_Click \nError: {error}");
+                    return;
+                }
+
+                MessageBox.Show("Product successfully updated.");
+                DataLoad();
+            }
+            else
+            {
+                MessageBox.Show("No changes detected.");
+                
+            }
+        }
+
+
 
 
         private void delete_btn_Click(object sender, EventArgs e)

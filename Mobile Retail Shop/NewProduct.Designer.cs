@@ -56,6 +56,15 @@
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_image = new Guna.UI2.WinForms.Guna2PictureBox();
             this.product_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.update_discount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.update_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.update_quantity = new Guna.UI2.WinForms.Guna2TextBox();
+            this.update_price = new Guna.UI2.WinForms.Guna2TextBox();
+            this.update_colour = new Guna.UI2.WinForms.Guna2TextBox();
+            this.update_modelname = new Guna.UI2.WinForms.Guna2TextBox();
+            this.update_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.unsold_quantity_label = new System.Windows.Forms.Label();
             this.Sold = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TotalQuantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -74,11 +83,13 @@
             this.new_product_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_image)).BeginInit();
             this.product_panel.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // discount_tb
             // 
+            this.discount_tb.BackColor = System.Drawing.SystemColors.Control;
             this.discount_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.discount_tb.DefaultText = "";
             this.discount_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -376,7 +387,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 838);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(312, 10);
+            this.guna2Panel2.Size = new System.Drawing.Size(682, 10);
             this.guna2Panel2.TabIndex = 23;
             // 
             // add_new_product_btn
@@ -438,11 +449,12 @@
             this.new_product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.new_product_panel.Location = new System.Drawing.Point(0, 0);
             this.new_product_panel.Name = "new_product_panel";
-            this.new_product_panel.Size = new System.Drawing.Size(312, 848);
+            this.new_product_panel.Size = new System.Drawing.Size(682, 848);
             this.new_product_panel.TabIndex = 26;
             // 
             // Quantity_set_by_shopowner
             // 
+            this.Quantity_set_by_shopowner.BackColor = System.Drawing.Color.White;
             this.Quantity_set_by_shopowner.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Quantity_set_by_shopowner.DefaultText = "";
             this.Quantity_set_by_shopowner.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -481,6 +493,7 @@
             // product_panel
             // 
             this.product_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.product_panel.Controls.Add(this.panel1);
             this.product_panel.Controls.Add(this.unsold_quantity_label);
             this.product_panel.Controls.Add(this.Sold);
             this.product_panel.Controls.Add(this.TotalQuantity);
@@ -498,8 +511,174 @@
             this.product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.product_panel.Location = new System.Drawing.Point(0, 848);
             this.product_panel.Name = "product_panel";
-            this.product_panel.Size = new System.Drawing.Size(312, 387);
+            this.product_panel.Size = new System.Drawing.Size(682, 387);
             this.product_panel.TabIndex = 27;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.update_discount);
+            this.panel1.Controls.Add(this.guna2HtmlLabel10);
+            this.panel1.Controls.Add(this.update_btn);
+            this.panel1.Controls.Add(this.update_quantity);
+            this.panel1.Controls.Add(this.update_price);
+            this.panel1.Controls.Add(this.update_colour);
+            this.panel1.Controls.Add(this.update_modelname);
+            this.panel1.Controls.Add(this.update_name);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.panel1.Location = new System.Drawing.Point(367, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(236, 354);
+            this.panel1.TabIndex = 35;
+            // 
+            // update_discount
+            // 
+            this.update_discount.BackColor = System.Drawing.SystemColors.Control;
+            this.update_discount.Cursor = System.Windows.Forms.Cursors.No;
+            this.update_discount.DefaultText = "";
+            this.update_discount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.update_discount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.update_discount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_discount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_discount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_discount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_discount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_discount.Location = new System.Drawing.Point(52, 192);
+            this.update_discount.Name = "update_discount";
+            this.update_discount.PasswordChar = '\0';
+            this.update_discount.PlaceholderText = "Discount";
+            this.update_discount.SelectedText = "";
+            this.update_discount.Size = new System.Drawing.Size(147, 36);
+            this.update_discount.TabIndex = 44;
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.Red;
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(52, 3);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(140, 20);
+            this.guna2HtmlLabel10.TabIndex = 43;
+            this.guna2HtmlLabel10.Text = "You can change only";
+            // 
+            // update_btn
+            // 
+            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.update_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.update_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.update_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.update_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.update_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.update_btn.FillColor = System.Drawing.Color.Lime;
+            this.update_btn.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.update_btn.ForeColor = System.Drawing.Color.Black;
+            this.update_btn.Location = new System.Drawing.Point(3, 297);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.Size = new System.Drawing.Size(230, 51);
+            this.update_btn.TabIndex = 41;
+            this.update_btn.Text = "Update";
+            this.update_btn.Click += new System.EventHandler(this.update_Click);
+            // 
+            // update_quantity
+            // 
+            this.update_quantity.BackColor = System.Drawing.SystemColors.Control;
+            this.update_quantity.Cursor = System.Windows.Forms.Cursors.No;
+            this.update_quantity.DefaultText = "";
+            this.update_quantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.update_quantity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.update_quantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_quantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_quantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_quantity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_quantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_quantity.Location = new System.Drawing.Point(52, 234);
+            this.update_quantity.Name = "update_quantity";
+            this.update_quantity.PasswordChar = '\0';
+            this.update_quantity.PlaceholderText = "Quantity";
+            this.update_quantity.SelectedText = "";
+            this.update_quantity.Size = new System.Drawing.Size(147, 36);
+            this.update_quantity.TabIndex = 39;
+            // 
+            // update_price
+            // 
+            this.update_price.BackColor = System.Drawing.SystemColors.Control;
+            this.update_price.Cursor = System.Windows.Forms.Cursors.No;
+            this.update_price.DefaultText = "";
+            this.update_price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.update_price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.update_price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_price.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_price.Location = new System.Drawing.Point(52, 150);
+            this.update_price.Name = "update_price";
+            this.update_price.PasswordChar = '\0';
+            this.update_price.PlaceholderText = "Price";
+            this.update_price.SelectedText = "";
+            this.update_price.Size = new System.Drawing.Size(147, 36);
+            this.update_price.TabIndex = 38;
+            // 
+            // update_colour
+            // 
+            this.update_colour.BackColor = System.Drawing.SystemColors.Control;
+            this.update_colour.Cursor = System.Windows.Forms.Cursors.No;
+            this.update_colour.DefaultText = "";
+            this.update_colour.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.update_colour.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.update_colour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_colour.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_colour.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_colour.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_colour.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_colour.Location = new System.Drawing.Point(52, 108);
+            this.update_colour.Name = "update_colour";
+            this.update_colour.PasswordChar = '\0';
+            this.update_colour.PlaceholderText = "Color";
+            this.update_colour.SelectedText = "";
+            this.update_colour.Size = new System.Drawing.Size(147, 36);
+            this.update_colour.TabIndex = 37;
+            // 
+            // update_modelname
+            // 
+            this.update_modelname.BackColor = System.Drawing.SystemColors.Control;
+            this.update_modelname.Cursor = System.Windows.Forms.Cursors.No;
+            this.update_modelname.DefaultText = "";
+            this.update_modelname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.update_modelname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.update_modelname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_modelname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_modelname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_modelname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_modelname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_modelname.Location = new System.Drawing.Point(52, 66);
+            this.update_modelname.Name = "update_modelname";
+            this.update_modelname.PasswordChar = '\0';
+            this.update_modelname.PlaceholderText = "Model";
+            this.update_modelname.SelectedText = "";
+            this.update_modelname.Size = new System.Drawing.Size(147, 36);
+            this.update_modelname.TabIndex = 36;
+            // 
+            // update_name
+            // 
+            this.update_name.BackColor = System.Drawing.SystemColors.Control;
+            this.update_name.Cursor = System.Windows.Forms.Cursors.No;
+            this.update_name.DefaultText = "";
+            this.update_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.update_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.update_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.update_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_name.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.update_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.update_name.Location = new System.Drawing.Point(52, 24);
+            this.update_name.Name = "update_name";
+            this.update_name.PasswordChar = '\0';
+            this.update_name.PlaceholderText = "Name";
+            this.update_name.SelectedText = "";
+            this.update_name.Size = new System.Drawing.Size(147, 36);
+            this.update_name.TabIndex = 35;
             // 
             // unsold_quantity_label
             // 
@@ -560,7 +739,7 @@
             this.delete_btn.FillColor = System.Drawing.Color.Red;
             this.delete_btn.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.delete_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_btn.Location = new System.Drawing.Point(40, 320);
+            this.delete_btn.Location = new System.Drawing.Point(3, 323);
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.Size = new System.Drawing.Size(230, 51);
             this.delete_btn.TabIndex = 24;
@@ -654,7 +833,7 @@
             this.Controls.Add(this.product_panel);
             this.Controls.Add(this.new_product_panel);
             this.Name = "NewProduct";
-            this.Size = new System.Drawing.Size(312, 640);
+            this.Size = new System.Drawing.Size(682, 640);
             this.Load += new System.EventHandler(this.NewProduct_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -663,6 +842,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.product_image)).EndInit();
             this.product_panel.ResumeLayout(false);
             this.product_panel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_picture)).EndInit();
             this.ResumeLayout(false);
 
@@ -711,5 +892,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel Sold;
         private Guna.UI2.WinForms.Guna2HtmlLabel TotalQuantity;
         private System.Windows.Forms.Label unsold_quantity_label;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button update_btn;
+        private Guna.UI2.WinForms.Guna2TextBox update_quantity;
+        private Guna.UI2.WinForms.Guna2TextBox update_price;
+        private Guna.UI2.WinForms.Guna2TextBox update_colour;
+        private Guna.UI2.WinForms.Guna2TextBox update_modelname;
+        private Guna.UI2.WinForms.Guna2TextBox update_name;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2TextBox update_discount;
     }
 }
