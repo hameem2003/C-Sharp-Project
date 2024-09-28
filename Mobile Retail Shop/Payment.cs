@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
@@ -135,10 +136,9 @@ namespace Mobile_Retail_Shop
                                 // Update the Sold Quantity in [Product Information]
                                 string updateSoldQuantityQuery = @"
                             UPDATE [Product Information]
-                            SET [Sold] = [Sold] + @Quantity,
-                                [Quantity] = [Quantity] - @Quantity  -- Decrease available stock
-                            WHERE [ID] = @ProductID;";
-
+                            SET [Sold] = [Sold] + @Quantity
+                       WHERE [ID] = @ProductID;";
+                                //[Quantity] = [Quantity] - @Quantity-- Decrease available stock
                                 using (SqlCommand updateCmd = new SqlCommand(updateSoldQuantityQuery, connection, transaction))
                                 {
                                     updateCmd.Parameters.Clear();
