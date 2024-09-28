@@ -87,6 +87,7 @@
             // 
             // product_picture
             // 
+            this.product_picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.product_picture.ImageRotate = 0F;
             this.product_picture.Location = new System.Drawing.Point(53, 0);
             this.product_picture.Name = "product_picture";
@@ -99,13 +100,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.product_details_btn);
             this.Controls.Add(this.product_buy_btn);
             this.Controls.Add(this.product_price);
             this.Controls.Add(this.product_name);
             this.Controls.Add(this.product_picture);
             this.Name = "ProductInformation";
-            this.Size = new System.Drawing.Size(248, 313);
+            this.Size = new System.Drawing.Size(244, 309);
             ((System.ComponentModel.ISupportInitialize)(this.product_picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

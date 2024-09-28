@@ -55,7 +55,7 @@ namespace Mobile_Retail_Shop
             {
                 new_product_panel.Visible = false;
                 product_panel.Visible = true;
-                back_btn.Visible = false;
+                //back_btn.Visible = false;
                 DataLoad();
             }
                 
@@ -447,6 +447,9 @@ namespace Mobile_Retail_Shop
 
         }
 
+        
+
+
         private void delete_btn_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show($"Are you sure you want to delete this product?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -474,7 +477,7 @@ namespace Mobile_Retail_Shop
             {
                 new_product_panel.Visible = false;
                 product_panel.Visible = true;
-                back_btn.Visible = false;
+                //back_btn.Visible = false;
                 DataLoad();
             }
         }

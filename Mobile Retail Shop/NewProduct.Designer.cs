@@ -52,11 +52,15 @@
             this.add_new_product_btn = new Guna.UI2.WinForms.Guna2Button();
             this.choose_picture_btn = new Guna.UI2.WinForms.Guna2Button();
             this.new_product_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.Quantity_set_by_shopowner = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_image = new Guna.UI2.WinForms.Guna2PictureBox();
             this.product_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.unsold_quantity_label = new System.Windows.Forms.Label();
+            this.Sold = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.TotalQuantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.rating = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.discount = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.back_btn = new Guna.UI2.WinForms.Guna2Button();
             this.delete_btn = new Guna.UI2.WinForms.Guna2Button();
             this.price = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.color = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -66,11 +70,6 @@
             this.model = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.compnay_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.product_picture = new System.Windows.Forms.PictureBox();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Quantity_set_by_shopowner = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TotalQuantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Sold = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.unsold_quantity_label = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.new_product_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.product_image)).BeginInit();
@@ -377,7 +376,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 838);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(346, 10);
+            this.guna2Panel2.Size = new System.Drawing.Size(312, 10);
             this.guna2Panel2.TabIndex = 23;
             // 
             // add_new_product_btn
@@ -388,7 +387,7 @@
             this.add_new_product_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.add_new_product_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.add_new_product_btn.ForeColor = System.Drawing.Color.White;
-            this.add_new_product_btn.Location = new System.Drawing.Point(109, 773);
+            this.add_new_product_btn.Location = new System.Drawing.Point(88, 781);
             this.add_new_product_btn.Name = "add_new_product_btn";
             this.add_new_product_btn.Size = new System.Drawing.Size(180, 45);
             this.add_new_product_btn.TabIndex = 24;
@@ -439,168 +438,8 @@
             this.new_product_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.new_product_panel.Location = new System.Drawing.Point(0, 0);
             this.new_product_panel.Name = "new_product_panel";
-            this.new_product_panel.Size = new System.Drawing.Size(346, 848);
+            this.new_product_panel.Size = new System.Drawing.Size(312, 848);
             this.new_product_panel.TabIndex = 26;
-            // 
-            // product_image
-            // 
-            this.product_image.ImageRotate = 0F;
-            this.product_image.Location = new System.Drawing.Point(135, 10);
-            this.product_image.Name = "product_image";
-            this.product_image.Size = new System.Drawing.Size(154, 153);
-            this.product_image.TabIndex = 26;
-            this.product_image.TabStop = false;
-            // 
-            // product_panel
-            // 
-            this.product_panel.Controls.Add(this.unsold_quantity_label);
-            this.product_panel.Controls.Add(this.Sold);
-            this.product_panel.Controls.Add(this.TotalQuantity);
-            this.product_panel.Controls.Add(this.rating);
-            this.product_panel.Controls.Add(this.discount);
-            this.product_panel.Controls.Add(this.back_btn);
-            this.product_panel.Controls.Add(this.delete_btn);
-            this.product_panel.Controls.Add(this.price);
-            this.product_panel.Controls.Add(this.color);
-            this.product_panel.Controls.Add(this.rom);
-            this.product_panel.Controls.Add(this.ram);
-            this.product_panel.Controls.Add(this.sim);
-            this.product_panel.Controls.Add(this.model);
-            this.product_panel.Controls.Add(this.compnay_name);
-            this.product_panel.Controls.Add(this.product_picture);
-            this.product_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.product_panel.Location = new System.Drawing.Point(0, 848);
-            this.product_panel.Name = "product_panel";
-            this.product_panel.Size = new System.Drawing.Size(346, 387);
-            this.product_panel.TabIndex = 27;
-            // 
-            // rating
-            // 
-            this.rating.BackColor = System.Drawing.Color.Transparent;
-            this.rating.Location = new System.Drawing.Point(158, 174);
-            this.rating.Name = "rating";
-            this.rating.Size = new System.Drawing.Size(78, 15);
-            this.rating.TabIndex = 15;
-            this.rating.Text = "Company Name";
-            // 
-            // discount
-            // 
-            this.discount.BackColor = System.Drawing.Color.Transparent;
-            this.discount.Location = new System.Drawing.Point(158, 153);
-            this.discount.Name = "discount";
-            this.discount.Size = new System.Drawing.Size(78, 15);
-            this.discount.TabIndex = 15;
-            this.discount.Text = "Company Name";
-            // 
-            // back_btn
-            // 
-            this.back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.back_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.back_btn.ForeColor = System.Drawing.Color.White;
-            this.back_btn.Location = new System.Drawing.Point(13, 247);
-            this.back_btn.Name = "back_btn";
-            this.back_btn.Size = new System.Drawing.Size(80, 45);
-            this.back_btn.TabIndex = 24;
-            this.back_btn.Text = "Back";
-            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
-            // 
-            // delete_btn
-            // 
-            this.delete_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.delete_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.delete_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.delete_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.delete_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.delete_btn.ForeColor = System.Drawing.Color.White;
-            this.delete_btn.Location = new System.Drawing.Point(176, 247);
-            this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(78, 45);
-            this.delete_btn.TabIndex = 24;
-            this.delete_btn.Text = "Delete";
-            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
-            // 
-            // price
-            // 
-            this.price.BackColor = System.Drawing.Color.Transparent;
-            this.price.Location = new System.Drawing.Point(158, 132);
-            this.price.Name = "price";
-            this.price.Size = new System.Drawing.Size(78, 15);
-            this.price.TabIndex = 15;
-            this.price.Text = "Company Name";
-            // 
-            // color
-            // 
-            this.color.BackColor = System.Drawing.Color.Transparent;
-            this.color.Location = new System.Drawing.Point(158, 111);
-            this.color.Name = "color";
-            this.color.Size = new System.Drawing.Size(78, 15);
-            this.color.TabIndex = 15;
-            this.color.Text = "Company Name";
-            // 
-            // rom
-            // 
-            this.rom.BackColor = System.Drawing.Color.Transparent;
-            this.rom.Location = new System.Drawing.Point(158, 90);
-            this.rom.Name = "rom";
-            this.rom.Size = new System.Drawing.Size(78, 15);
-            this.rom.TabIndex = 15;
-            this.rom.Text = "Company Name";
-            // 
-            // ram
-            // 
-            this.ram.BackColor = System.Drawing.Color.Transparent;
-            this.ram.Location = new System.Drawing.Point(158, 69);
-            this.ram.Name = "ram";
-            this.ram.Size = new System.Drawing.Size(78, 15);
-            this.ram.TabIndex = 15;
-            this.ram.Text = "Company Name";
-            // 
-            // sim
-            // 
-            this.sim.BackColor = System.Drawing.Color.Transparent;
-            this.sim.Location = new System.Drawing.Point(158, 48);
-            this.sim.Name = "sim";
-            this.sim.Size = new System.Drawing.Size(78, 15);
-            this.sim.TabIndex = 15;
-            this.sim.Text = "Company Name";
-            // 
-            // model
-            // 
-            this.model.BackColor = System.Drawing.Color.Transparent;
-            this.model.Location = new System.Drawing.Point(158, 27);
-            this.model.Name = "model";
-            this.model.Size = new System.Drawing.Size(78, 15);
-            this.model.TabIndex = 15;
-            this.model.Text = "Company Name";
-            // 
-            // compnay_name
-            // 
-            this.compnay_name.BackColor = System.Drawing.Color.Transparent;
-            this.compnay_name.Location = new System.Drawing.Point(158, 6);
-            this.compnay_name.Name = "compnay_name";
-            this.compnay_name.Size = new System.Drawing.Size(78, 15);
-            this.compnay_name.TabIndex = 15;
-            this.compnay_name.Text = "Company Name";
-            // 
-            // product_picture
-            // 
-            this.product_picture.Location = new System.Drawing.Point(3, 3);
-            this.product_picture.Name = "product_picture";
-            this.product_picture.Size = new System.Drawing.Size(149, 189);
-            this.product_picture.TabIndex = 14;
-            this.product_picture.TabStop = false;
-            // 
-            // guna2HtmlLabel8
-            // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(40, 600);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(42, 15);
-            this.guna2HtmlLabel8.TabIndex = 28;
-            this.guna2HtmlLabel8.Text = "Quantity";
             // 
             // Quantity_set_by_shopowner
             // 
@@ -621,32 +460,191 @@
             this.Quantity_set_by_shopowner.Size = new System.Drawing.Size(271, 36);
             this.Quantity_set_by_shopowner.TabIndex = 29;
             // 
-            // TotalQuantity
+            // guna2HtmlLabel8
             // 
-            this.TotalQuantity.BackColor = System.Drawing.Color.Transparent;
-            this.TotalQuantity.Location = new System.Drawing.Point(158, 190);
-            this.TotalQuantity.Name = "TotalQuantity";
-            this.TotalQuantity.Size = new System.Drawing.Size(78, 15);
-            this.TotalQuantity.TabIndex = 25;
-            this.TotalQuantity.Text = "Company Name";
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(40, 600);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(42, 15);
+            this.guna2HtmlLabel8.TabIndex = 28;
+            this.guna2HtmlLabel8.Text = "Quantity";
             // 
-            // Sold
+            // product_image
             // 
-            this.Sold.BackColor = System.Drawing.Color.Transparent;
-            this.Sold.Location = new System.Drawing.Point(158, 208);
-            this.Sold.Name = "Sold";
-            this.Sold.Size = new System.Drawing.Size(78, 15);
-            this.Sold.TabIndex = 26;
-            this.Sold.Text = "Company Name";
+            this.product_image.ImageRotate = 0F;
+            this.product_image.Location = new System.Drawing.Point(135, 10);
+            this.product_image.Name = "product_image";
+            this.product_image.Size = new System.Drawing.Size(154, 153);
+            this.product_image.TabIndex = 26;
+            this.product_image.TabStop = false;
+            // 
+            // product_panel
+            // 
+            this.product_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.product_panel.Controls.Add(this.unsold_quantity_label);
+            this.product_panel.Controls.Add(this.Sold);
+            this.product_panel.Controls.Add(this.TotalQuantity);
+            this.product_panel.Controls.Add(this.rating);
+            this.product_panel.Controls.Add(this.discount);
+            this.product_panel.Controls.Add(this.delete_btn);
+            this.product_panel.Controls.Add(this.price);
+            this.product_panel.Controls.Add(this.color);
+            this.product_panel.Controls.Add(this.rom);
+            this.product_panel.Controls.Add(this.ram);
+            this.product_panel.Controls.Add(this.sim);
+            this.product_panel.Controls.Add(this.model);
+            this.product_panel.Controls.Add(this.compnay_name);
+            this.product_panel.Controls.Add(this.product_picture);
+            this.product_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.product_panel.Location = new System.Drawing.Point(0, 848);
+            this.product_panel.Name = "product_panel";
+            this.product_panel.Size = new System.Drawing.Size(312, 387);
+            this.product_panel.TabIndex = 27;
             // 
             // unsold_quantity_label
             // 
             this.unsold_quantity_label.AutoSize = true;
-            this.unsold_quantity_label.Location = new System.Drawing.Point(158, 228);
+            this.unsold_quantity_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unsold_quantity_label.Location = new System.Drawing.Point(160, 266);
             this.unsold_quantity_label.Name = "unsold_quantity_label";
-            this.unsold_quantity_label.Size = new System.Drawing.Size(109, 13);
+            this.unsold_quantity_label.Size = new System.Drawing.Size(148, 18);
             this.unsold_quantity_label.TabIndex = 27;
             this.unsold_quantity_label.Text = "unsold_quantity_label";
+            // 
+            // Sold
+            // 
+            this.Sold.BackColor = System.Drawing.Color.Transparent;
+            this.Sold.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sold.Location = new System.Drawing.Point(165, 246);
+            this.Sold.Name = "Sold";
+            this.Sold.Size = new System.Drawing.Size(111, 20);
+            this.Sold.TabIndex = 26;
+            this.Sold.Text = "Company Name";
+            // 
+            // TotalQuantity
+            // 
+            this.TotalQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.TotalQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalQuantity.Location = new System.Drawing.Point(165, 228);
+            this.TotalQuantity.Name = "TotalQuantity";
+            this.TotalQuantity.Size = new System.Drawing.Size(111, 20);
+            this.TotalQuantity.TabIndex = 25;
+            this.TotalQuantity.Text = "Company Name";
+            // 
+            // rating
+            // 
+            this.rating.BackColor = System.Drawing.Color.Transparent;
+            this.rating.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rating.Location = new System.Drawing.Point(165, 212);
+            this.rating.Name = "rating";
+            this.rating.Size = new System.Drawing.Size(111, 20);
+            this.rating.TabIndex = 15;
+            this.rating.Text = "Company Name";
+            // 
+            // discount
+            // 
+            this.discount.BackColor = System.Drawing.Color.Transparent;
+            this.discount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discount.Location = new System.Drawing.Point(165, 191);
+            this.discount.Name = "discount";
+            this.discount.Size = new System.Drawing.Size(111, 20);
+            this.discount.TabIndex = 15;
+            this.discount.Text = "Company Name";
+            // 
+            // delete_btn
+            // 
+            this.delete_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.delete_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.delete_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.delete_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.delete_btn.FillColor = System.Drawing.Color.Red;
+            this.delete_btn.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.delete_btn.ForeColor = System.Drawing.Color.White;
+            this.delete_btn.Location = new System.Drawing.Point(40, 320);
+            this.delete_btn.Name = "delete_btn";
+            this.delete_btn.Size = new System.Drawing.Size(230, 51);
+            this.delete_btn.TabIndex = 24;
+            this.delete_btn.Text = "Delete";
+            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
+            // 
+            // price
+            // 
+            this.price.BackColor = System.Drawing.Color.Transparent;
+            this.price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.Location = new System.Drawing.Point(165, 170);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(111, 20);
+            this.price.TabIndex = 15;
+            this.price.Text = "Company Name";
+            // 
+            // color
+            // 
+            this.color.BackColor = System.Drawing.Color.Transparent;
+            this.color.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.color.Location = new System.Drawing.Point(165, 149);
+            this.color.Name = "color";
+            this.color.Size = new System.Drawing.Size(111, 20);
+            this.color.TabIndex = 15;
+            this.color.Text = "Company Name";
+            // 
+            // rom
+            // 
+            this.rom.BackColor = System.Drawing.Color.Transparent;
+            this.rom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rom.Location = new System.Drawing.Point(165, 128);
+            this.rom.Name = "rom";
+            this.rom.Size = new System.Drawing.Size(111, 20);
+            this.rom.TabIndex = 15;
+            this.rom.Text = "Company Name";
+            // 
+            // ram
+            // 
+            this.ram.BackColor = System.Drawing.Color.Transparent;
+            this.ram.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ram.Location = new System.Drawing.Point(165, 107);
+            this.ram.Name = "ram";
+            this.ram.Size = new System.Drawing.Size(111, 20);
+            this.ram.TabIndex = 15;
+            this.ram.Text = "Company Name";
+            // 
+            // sim
+            // 
+            this.sim.BackColor = System.Drawing.Color.Transparent;
+            this.sim.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sim.Location = new System.Drawing.Point(165, 86);
+            this.sim.Name = "sim";
+            this.sim.Size = new System.Drawing.Size(111, 20);
+            this.sim.TabIndex = 15;
+            this.sim.Text = "Company Name";
+            // 
+            // model
+            // 
+            this.model.BackColor = System.Drawing.Color.Transparent;
+            this.model.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.model.Location = new System.Drawing.Point(165, 65);
+            this.model.Name = "model";
+            this.model.Size = new System.Drawing.Size(111, 20);
+            this.model.TabIndex = 15;
+            this.model.Text = "Company Name";
+            // 
+            // compnay_name
+            // 
+            this.compnay_name.BackColor = System.Drawing.Color.Transparent;
+            this.compnay_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compnay_name.Location = new System.Drawing.Point(165, 44);
+            this.compnay_name.Name = "compnay_name";
+            this.compnay_name.Size = new System.Drawing.Size(111, 20);
+            this.compnay_name.TabIndex = 15;
+            this.compnay_name.Text = "Company Name";
+            // 
+            // product_picture
+            // 
+            this.product_picture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.product_picture.Location = new System.Drawing.Point(3, 69);
+            this.product_picture.Name = "product_picture";
+            this.product_picture.Size = new System.Drawing.Size(149, 189);
+            this.product_picture.TabIndex = 14;
+            this.product_picture.TabStop = false;
             // 
             // NewProduct
             // 
@@ -656,7 +654,7 @@
             this.Controls.Add(this.product_panel);
             this.Controls.Add(this.new_product_panel);
             this.Name = "NewProduct";
-            this.Size = new System.Drawing.Size(346, 640);
+            this.Size = new System.Drawing.Size(312, 640);
             this.Load += new System.EventHandler(this.NewProduct_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -708,7 +706,6 @@
         private Guna.UI2.WinForms.Guna2Button delete_btn;
         private Guna.UI2.WinForms.Guna2PictureBox product_image;
         private Guna.UI2.WinForms.Guna2HtmlLabel rating;
-        private Guna.UI2.WinForms.Guna2Button back_btn;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2TextBox Quantity_set_by_shopowner;
         private Guna.UI2.WinForms.Guna2HtmlLabel Sold;
